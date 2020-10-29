@@ -1,0 +1,268 @@
+
+"""
+OldRustyBot[b4]
+
+coded by: chessbunny1
+
+coding language: Python
+
+publish date: 29.10.2020
+
+copyright: just type "from OldRustyBot[b4]"
+
+help: chessbunny1#7848 (Discord)
+"""
+
+import discord
+from discord.ext import commands
+
+client = commands.Bot(command_prefix=">")
+
+TOKEN = "NzI3NDE3ODg5ODk1NzQzNTM5.Xvrisw.d1wHJwHMtb6U8shfcW7inVfIUhg"
+
+
+@client.event
+async def on_ready():
+    await client.change_presence(activity=discord.Game('Minecraft'))
+    print("Bot is ready")
+
+
+@client.event
+async def on_message(message):
+
+    if message.content.startswith('>chessbunny1'):
+        embedVar = discord.Embed(title="CHESSBUNNY1", description=" a bunny")
+        embedVar.add_field(name="Nick", value="chessbunny1", inline=True)
+        embedVar.add_field(name="ID", value="#7848", inline=True)
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        embedVar.set_image(
+            url='https://payload.cargocollective.com/1/3/105473/13352912/IMG_0088_670.jpg')
+        embedVar.set_thumbnail(
+            url='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_author(name="OldRustyBot",
+                            icon_url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px"
+                                     "-Python.svg.png")
+        await message.channel.send(embed=embedVar)
+        await message.delete()
+
+    if message.content.startswith('>Feuerball2009'):
+        embedVar = discord.Embed(title="FEUERBALL2009", description=" a fireball")
+        embedVar.add_field(name="Nick", value="Feuerball2009", inline=True)
+        embedVar.add_field(name="ID", value="#5006", inline=True)
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        embedVar.set_image(
+            url='https://s.w-x.co/de-feuerball.png')
+        embedVar.set_thumbnail(
+            url='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_author(name="OldRustyBot",
+                            icon_url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px"
+                                     "-Python.svg.png")
+        await message.delete()
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith('>CookieShredder'):
+        embedVar = discord.Embed(title="COOKIE_SHREDDER", description=" a person, who shreds cookies")
+        embedVar.add_field(name="Nick", value="CookieShredder", inline=True)
+        embedVar.add_field(name="ID", value="#9960", inline=True)
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        embedVar.set_thumbnail(
+            url='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_author(name="OldRustyBot",
+                            icon_url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px"
+                                     "-Python.svg.png")
+        await message.delete()
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith('>OldRustyBot'):
+        embedVar = discord.Embed(title="OLD,RUSTY BOT", description="The best bot on this server")
+        embedVar.add_field(name="Nick", value="OldRustyBot", inline=True)
+        embedVar.add_field(name="ID", value="#8456", inline=True)
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        embedVar.set_image(
+            url='https://dl9fvu4r30qs1.cloudfront.net/4a/74/b2a8386e4fdbb5e0f101bc6fdf8c/castle-in-the-sky.jpg')
+        embedVar.set_thumbnail(
+            url='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_author(name="OldRustyBot",
+                            icon_url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px"
+                                     "-Python.svg.png")
+        await message.delete()
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith('>help'):
+        embedVar = discord.Embed(title="HELP", description="which type of help do you need?")
+        embedVar.add_field(name="userinfo", value="`>ui_help`", inline=True)
+        embedVar.add_field(name="music", value="`>music_help`", inline=True)
+        embedVar.add_field(name="X-tra", value="`>Images` to show all images I have used,"
+                                               " `*ignore*` to ignore filter (Yes, I've got an filter!) Example:"
+                                               " `*ignore* noob`. I also got `>userinfo_me`,"
+                                               " it makes a simple userinfo about you.", inline=False)
+        embedVar.add_field(name="I need more ideas!", value="message chessbunny1#7848 if you got them!", inline=False)
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        embedVar.set_image(
+            url='https://dl9fvu4r30qs1.cloudfront.net/4a/74/b2a8386e4fdbb5e0f101bc6fdf8c/castle-in-the-sky.jpg')
+        embedVar.set_thumbnail(
+            url='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_author(name="OldRustyBot",
+                            icon_url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px"
+                                     "-Python.svg.png")
+        await message.delete()
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith('>ui_help'):
+        embedVar = discord.Embed(title="USERINFO_HELP", description="These are all userinfo I have:")
+        embedVar.add_field(name="chessbunny1", value="`>chessbunny1` or `>cb1`", inline=False)
+        embedVar.add_field(name="Feuerball2009", value="`>Feuerball2009` or `>fb2`", inline=False)
+        embedVar.add_field(name="OldRustyBot", value="`>OldRustyBot` or `>orb`", inline=False)
+        embedVar.add_field(name="CookieShredder", value="`>CookieShredder` or `>cs`", inline=False)
+        embedVar.add_field(name="Them all:", value="`>ui`")
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        embedVar.set_image(
+            url='https://dl9fvu4r30qs1.cloudfront.net/4a/74/b2a8386e4fdbb5e0f101bc6fdf8c/castle-in-the-sky.jpg')
+        embedVar.set_thumbnail(
+            url='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_author(name="OldRustyBot",
+                            icon_url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px"
+                                     "-Python.svg.png")
+        await message.delete()
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith('>music_help'):
+        embedVar = discord.Embed(title="MUSIC_HELP", description="all music commands:")
+        embedVar.add_field(name="join jour channel:", value="`>join` it doesn't work now", inline=False)
+        embedVar.add_field(name="exit your channel:", value="`>esc` will not work too", inline=False)
+        embedVar.add_field(name="play jour music with link:", value="`>COMING SOON`", inline=False)
+        embedVar.add_field(name="play your mp3:", value="`COMING SOON TOO`")
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        embedVar.set_image(
+            url='https://dl9fvu4r30qs1.cloudfront.net/4a/74/b2a8386e4fdbb5e0f101bc6fdf8c/castle-in-the-sky.jpg')
+        embedVar.set_thumbnail(
+            url='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_author(name="OldRustyBot",
+                            icon_url="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px"
+                                     "-Python.svg.png")
+        await message.delete()
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith('>Images'):
+        await message.delete()
+        embedVar = discord.Embed()
+        embedVar.set_image(
+            url='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png')
+        await message.channel.send(embed=embedVar)
+        embedVar = discord.Embed()
+        embedVar.set_image(
+            url='https://upload.wikimedia.org'
+                '/wikipedia/commons/thumb/a/a1/PyCharm_Logo.svg/1200px-PyCharm_Logo.svg.png')
+        await message.channel.send(embed=embedVar)
+        embedVar = discord.Embed()
+        embedVar.set_image(
+            url='https://dl9fvu4r30qs1.cloudfront.net/4a/74/b2a8386e4fdbb5e0f101bc6fdf8c/castle-in-the-sky.jpg')
+        await message.channel.send(embed=embedVar)
+        embedVar = discord.Embed()
+        embedVar.set_image(
+            url='https://s.w-x.co/de-feuerball.png')
+        await message.channel.send(embed=embedVar)
+        embedVar = discord.Embed()
+        embedVar.set_image(
+            url='https://payload.cargocollective.com/1/3/105473/13352912/IMG_0088_670.jpg')
+        await message.channel.send(embed=embedVar)
+        embedVar = discord.Embed()
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        await message.channel.send(embed=embedVar)
+
+    f = ["noob", "shout up", "NOOB", "SHOUT UP"]
+
+    for word in f:
+        if message.content.count(word) > 0:
+            if message.author.name == "OldRustyBot":
+                pass
+            else:
+                if "*ignore*" in message.content:
+                    pass
+                else:
+                    bad_message = message.content
+                    await message.delete()
+                    await message.channel.send(":no_entry: `%s` has send a message, tha contains a bad word,"
+                                               " his message is now deleted."
+                                               % message.author.name)
+                    await message.channel.send("`message.content` : `%s`" % bad_message)
+
+    py = ["Python", "PYTHON", "Python", "PYTHON", "python", "python", "discord.py"]
+
+    for word in py:
+        if message.content.count(word) > 0:
+            if message.author.name == "OldRustyBot":
+                pass
+            else:
+                await message.add_reaction("<:python:764408549941837835>")
+
+    if message.content.startswith(">cb1"):
+        await message.delete()
+        embedVar = discord.Embed()
+        embedVar.set_author(name="chessbunny1#7848", icon_url='https://upload.wikimedia.org/wikipedia/commons/thumb/0'
+                                                              '/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith(">fb2"):
+        await message.delete()
+        embedVar = discord.Embed()
+        embedVar.set_author(name="Feuerball2009#5006", icon_url='https://upload.wikimedia.org/wikipedia/commons/thumb/0'
+                                                                '/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith(">orb"):
+        await message.delete()
+        embedVar = discord.Embed()
+        embedVar.set_author(name="OldRustyBot#8456", icon_url='https://upload.wikimedia.org/wikipedia/commons/thumb/0'
+                                                              '/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith(">cs"):
+        await message.delete()
+        embedVar = discord.Embed()
+        embedVar.set_author(name="CookieShredder#9960", icon_url='https://upload.wikimedia.org/wikipedia/commons/thumb'
+                                                                 '/0/0a/Python.svg/1200px-Python.svg.png')
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith(">ui"):
+        await message.delete()
+        embedVar = discord.Embed()
+        embedVar.set_author(name="chessbunny1#7848", icon_url='https://upload.wikimedia.org/wikipedia/commons/thumb/0'
+                                                              '/0a/Python.svg/1200px-Python.svg.png')
+        await message.channel.send(embed=embedVar)
+        embedVar = discord.Embed()
+        embedVar.set_author(name="Feuerball2009#5006", icon_url='https://upload.wikimedia.org/wikipedia/commons/thumb/0'
+                                                                '/0a/Python.svg/1200px-Python.svg.png')
+        await message.channel.send(embed=embedVar)
+        embedVar = discord.Embed()
+        embedVar.set_author(name="OldRustyBot#8456", icon_url='https://upload.wikimedia.org/wikipedia/commons/thumb/0'
+                                                              '/0a/Python.svg/1200px-Python.svg.png')
+        await message.channel.send(embed=embedVar)
+        embedVar = discord.Embed()
+        embedVar.set_author(name="CookieShredder#9960", icon_url='https://upload.wikimedia.org/wikipedia/commons/thumb'
+                                                                 '/0/0a/Python.svg/1200px-Python.svg.png')
+
+        await message.channel.send(embed=embedVar)
+        embedVar = discord.Embed()
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith(">ae"):
+        await message.delete()
+        embedVar = discord.Embed()
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        await message.channel.send(embed=embedVar)
+
+    if message.content.startswith(">userinfo_me"):
+        await message.delete()
+        embedVar = discord.Embed()
+        embedVar.set_author(name=message.author.name, icon_url=message.author.avatar_url)
+        embedVar.set_footer(text="called by %s" % message.author.name, icon_url=message.author.avatar_url)
+        await message.channel.send("Look at this! *very interesting*", embed=embedVar)
+
+
+client.run(TOKEN)
